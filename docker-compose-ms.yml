@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  backend-test-demo:
+    image: backend-test-demo:1.0.0
+    container_name: backend-test-demo
+    restart: always
+    ports:
+    - 10500:10500
+    networks:
+      - msbasic
+networks:
+  msbasic:
+    name: demo_interseguros
+
